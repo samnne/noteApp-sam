@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.addNote {
+    height: 150px;
+    background: #ffcc00;
+    cursor: pointer;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.note-row {
+    background: #ffcc00;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.note-editor {
+    height: 250px;
+    width: 250px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.note-editor::-webkit-scrollbar {
+    display: none;
+}
+
+.note-controls {
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+}
+
+.note-controls div{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    background: #e7c000;
+    border-radius: 5px;
+    line-height: 30px;
+
+}
+
+.note-controls img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.bold{
+    font-weight: bold;
+
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+
