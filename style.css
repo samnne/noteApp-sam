@@ -20,18 +20,29 @@ body {
 }
 
 .addNote {
-    height: 150px;
+    height: 50px;
     background: #ffcc00;
     cursor: pointer;
-    margin: 10px;
-    padding: 50px;
+    margin-top: 125px;
+    padding: 10px;
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.addNote:hover{
+    transform: scale(1.1);
+    background: #ffe373;
 }
 
 .note-row {
     background: #ffcc00;
     margin: 10px;
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.note-row:hover {
+    transform: scale(1.01);
 }
 
 .note-editor {
@@ -51,7 +62,7 @@ body {
 
 .note-controls {
     height: 50px;
-    width: 250px;
+    width: 300px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -66,12 +77,20 @@ body {
     background: #e7c000;
     border-radius: 5px;
     line-height: 30px;
+    transition: all 0.2s;
+}
 
+.note-controls div:hover{
+    background: #9f8500;
 }
 
 .note-controls img {
     height: 25px;
     cursor: pointer;
+    transition: all 0.2s;
+}
+.note-controls img:hover {
+    transform: scale(1.05);
 }
 
 .capitalize{
@@ -94,5 +113,11 @@ body {
 
 .lineThrough{
     text-decoration: line-through;
+}
+
+
+#saveButton{
+    width: 50px;
+    
 }
 

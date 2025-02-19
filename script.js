@@ -36,8 +36,9 @@ function CreateNewNote(e) {
                 <div onclick="getSelectedStyle('italic')" class="italic">I</div>
                 <div onclick="getSelectedStyle('underline')" class="underline">U</div>
                 <div onclick="getSelectedStyle('lineThrough')" class="lineThrough">ab</div>
-                <hr />
+                
                 <img src="images/delete-icon.png" onclick="DeleteNote(this)" alt="">
+                <div id="saveButton" onclick="SaveNoteData()">Save</div>
             </div>
         </div>`;
     div.innerHTML = newNoteHTML;
